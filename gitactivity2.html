@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noriel Vasquez Acido - Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Basic page styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 40px 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header section */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Section styling */
+        section {
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Portfolio grid */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .portfolio-item {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .portfolio-item h3 {
+            font-size: 1.2rem;
+            margin: 10px;
+            color: #333;
+        }
+
+        /* Contact section */
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact a {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Noriel Vasquez Acido</h1>
+            <p>Front-End Developer | UI/UX Enthusiast | Graphic Designer</p>
+        </header>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate Front-End Developer and UI/UX enthusiast with a knack for creating visually appealing and user-friendly digital experiences. With a strong foundation in HTML, CSS, and JavaScript, I bring ideas to life with clean and efficient code. I’m always eager to learn and stay updated with the latest design trends and technologies.
+            </p>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>A brief description of Project 1.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>A brief description of Project 2.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>A brief description of Project 3.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project4.jpg" alt="Project 4">
+                    <h3>Project 4</h3>
+                    <p>A brief description of Project 4.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>
+                Let's connect! Feel free to reach out via <a href="mailto:youremail@example.com">email</a> or connect with me on <a href="https://www.linkedin.com">LinkedIn</a>.
+            </p>
+        </section>
+    </div>
+</body>
+</html>
